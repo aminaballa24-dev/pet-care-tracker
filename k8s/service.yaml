@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: pet-care-service
+spec:
+  type: ClusterIP
+  selector:
+    app: pet-care-service
+  ports:
+    - port: 80
+      targetPort: 8080
